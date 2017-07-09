@@ -1,0 +1,1 @@
+"D:\Program Files\nwjs-v0.23.2-win-x64\nw.exe" .\nodeweb
