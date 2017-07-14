@@ -3,8 +3,12 @@
 	margin-left: 5px;
 }
 
-nav li a {
+.nav li a {
 	font-size: 18px;
+}
+
+.nav-wrapper .active {
+	background-color: #ff9100;
 }
 
 
