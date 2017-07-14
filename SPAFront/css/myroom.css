@@ -1,0 +1,20 @@
+
+div {
+
+}
+
+.team-value {
+    color: #f4f7f8;
+    font-size: 24px;
+}
+
+.team-title {
+    color: #4db6ac;
+    font-size: 30px;
+}
+
+.team-leader-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
