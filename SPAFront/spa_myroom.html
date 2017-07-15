@@ -9,6 +9,7 @@
     <link href="./css/materialize.min.css" rel="stylesheet">
     <script src="./js/materialize.min.js"></script>
 
+    <link rel="stylesheet" href="./css/myroom.css">
 
 </head>
 
@@ -75,29 +76,90 @@
                 <a href="#!"><span class="white-text">我的好友</span></a>
             </div>
         </li>
-
-        <!--   friend info with invite check box     -->
-        <li class="friend-li">
-            <div class="row">
-                <div class="friend-avatar">
-                    <img src="./media/imgs/timg-2.jpeg">
-                </div>
-                <div class="friend-nickname">
-                    ColinYoung
-                </div>
-
-                <p>
-                    <input type="checkbox" id="friend_id" class="filled-in">
-                    <label for="friend_id">Red</label>
-                </p>
-
+        <li>
+            <div class="divider">
             </div>
+        </li>
 
+        <li>
+            <div class="row">
+                <div class="col s12 m6 center">
+                    <a class="waves-effect waves-light btn">邀请所有选中</a>
+                </div>
+                <div class="col s12 m6 center">
+                    <a class="waves-effect waves-light btn">邀请所有在线</a>
+                </div>
+            </div>
         </li>
         <li>
             <div class="divider">
             </div>
         </li>
+
+        <!--   friend info with invite check box     -->
+        <li class="friend-li">
+            <div class="row">
+                <div class="avatar-container">
+                    <img src="./media/imgs/timg-2.jpeg" class="friend-avatar">
+                </div>
+                <div class="friend-nickname">
+                    ColinYoung
+                </div>
+
+                <div class="color-dot color-dot-red">
+                </div>
+                <label class="friend-status friend-status--offline">
+                        离线
+                    </label>
+
+                <p class="invitebox right">
+                    <input type="checkbox" id="friend_id_1" class="filled-in">
+                    <label for="friend_id_1"></label>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="divider">
+            </div>
+        </li>
+
+        <!--    friend with divider ends here    -->
+
+        <!--   friend info with invite check box     -->
+        <li class="friend-li">
+            <div class="row">
+                <div class="avatar-container">
+                    <img src="./media/imgs/timg-2.jpeg" class="friend-avatar">
+                </div>
+                <div class="friend-nickname">
+                    ColinYoung
+                </div>
+
+                <div class="color-dot color-dot-green">
+                </div>
+                <label class="friend-status friend-status--online">
+                        在线
+                    </label>
+
+                <p class="invitebox right">
+                    <input type="checkbox" id="friend_id_2" class="filled-in">
+                    <label for="friend_id_2"></label>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="divider">
+            </div>
+        </li>
+
+        <!--    friend with divider ends here    -->
+
+
+
+
+
+
+
 
 
 
@@ -107,7 +169,7 @@
 
     <script>
         $('.toggle-friend-btn').sideNav({
-            menuWidth: 300, // Default is 300
+            menuWidth: 400, // Default is 300
             edge: 'right', // Choose the horizontal origin
             closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
             draggable: true, // Choose whether you can drag to open on touch screens,
