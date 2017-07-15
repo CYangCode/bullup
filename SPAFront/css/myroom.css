@@ -19,8 +19,14 @@ div {
     border-radius: 50%;
 }
 
-.friend-avatar {
+.friend-li .friend-avatar {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+
+
+
+.friend-info {
+    padding: 10px;
 }
