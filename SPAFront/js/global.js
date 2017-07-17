@@ -22,4 +22,11 @@ $().ready(function(){
 	$(".button-collapse").sideNav();
 	
     $('ul.tabs').tabs();
+
+    $('#team-detail-modal').modal();
+
+    $('#waiting-modal').modal();
+
+    // If waiting mode ends, close detail modal and open the created room modal
+
 });

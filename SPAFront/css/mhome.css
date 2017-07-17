@@ -21,7 +21,7 @@ body {
 	display: inline;
 }
 
-#log_modal, #sign_modal, #link_modal {
+#log_modal, #sign_modal, #link_modal, #team-detail-modal, #waiting-modal {
 	width: 50%;
 	background-color: #455a64;
 	color: #f5f5f5;

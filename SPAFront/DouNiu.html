@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="./css/boxstyle.css">
     <link rel="stylesheet" type="text/css" href="./css/friendbox.css">
     <link rel="stylesheet" type="text/css" href="./css/searchbox.css">
-    
+
 
 
 
@@ -130,7 +130,7 @@
 					  <option value="">召唤师峡谷</option>
 					  <option disabled value="">嚎哭深渊（敬请期待）</option>
 					</select>
-                                    <label>胜利条件</label>
+                                    <label>地图</label>
                                 </div>
                             </div>
 
@@ -251,6 +251,7 @@
         </div>
     </div>
 
+    <!--  sign modal  -->
     <div id="sign_modal" class="modal">
         <div class="modal-content">
             <h4>新用户注册</h4>
@@ -314,7 +315,7 @@
     </div>
 
 
-    <!-- Modal Structure -->
+    <!-- notification center Modal Structure -->
     <div id="message_sheet" class="modal bottom-sheet">
         <div class="modal-content" id="message_modal_content">
             <h4>消息中心</h4>
@@ -337,6 +338,107 @@
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat hover-black"><i class="fa fa-trash" aria-hidden="true"></i></a>
         </div>
     </div>
+
+
+
+    <!-- team detail modal Structure -->
+    <div id="team-detail-modal" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12 m3">
+                    <h4>HudsonJoe的队伍</h4>
+                    <label for="team-size">队伍人数</label>
+                    <p id="team-size">5</p>
+
+                    <label for="team-desc">队伍描述</label>
+                    <p id="team-desc">我们战斗吧</p>
+
+                    <label for="game-mode">游戏模式</label>
+                    <p id="game-mode">常规</p>
+                    <label for="winning-condition">胜利条件</label>
+                    <p id="winning-condition">推掉基地</p>
+                    <label for="bet-amount">下注金额</label>
+                    <p id="bet-amount">30</p>
+                </div>
+                <div class="s12 m9">
+                    <!--  Radar Chart of two teams                  -->
+                    <script src="./js/Chart.bundle.js"></script>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#waiting-modal" class="modal-action waves-effect waves-green btn-flat">邀请战斗</a>
+        </div>
+    </div>
+
+
+
+    <!-- Modal Structure -->
+    <div id="waiting-modal" class="modal">
+        <div class="modal-content">
+            <h4>等待对方队长应答</h4>
+            <!--            preloader-->
+            <div class="row center">
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-blue">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-red">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-yellow">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-green">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="./spa_fight.html" class="modal-action modal-close waves-effect waves-green btn-flat nav-link">隐藏到后台</a>
+        </div>
+    </div>
+
+
+
 
 </body>
 
