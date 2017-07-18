@@ -26,7 +26,8 @@ $().ready(function(){
     $('#team-detail-modal').modal();
 
     $('#waiting-modal').modal();
-
+	
+	$('#message_collapsible').collapsible();
     // If waiting mode ends, close detail modal and open the created room modal
 
 });
