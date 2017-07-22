@@ -1,7 +1,7 @@
 {
   "name": "nw-demo",
   "version": "0.0.1",
-  "main": "home.html",
+  "main": "mhome.html",
   "window": {
     "title": "Bull Fight",
     "toolbar": true,
