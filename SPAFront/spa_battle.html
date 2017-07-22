@@ -1,7 +1,8 @@
+<!DOCTYPE>
 <html>
+<meta charset="UTF-8">
 
 <head>
-	<script src="./js/spa.js"></script>
 
 </head>
 
@@ -14,8 +15,8 @@
 
 		<a class="nav-link waves-effect waves-light btn right" id="my_room" href="./spa_myroom.html">我的房间</a>
 	</div>
-	
-	
+
+
 	<div class="row">
 		<div class="col s12 m6 l4">
 			<div class="card battle-card grey darken-2">
@@ -89,6 +90,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<!-- team detail modal Structure -->
 	<div id="team-detail-modal" class="modal">
@@ -184,8 +186,13 @@
 		</div>
 	</div>
 
+	<div class="swig-content">
+
+	</div>
+
 	<script src="./js/Chart.bundle.js"></script>
 	<script src="./js/genRadar.js"></script>
+	<script src="./js/spa.js"></script>
 	<script>
 		$('#team-detail-modal').modal();
 
@@ -195,16 +202,41 @@
 		var component_data = [99, 78, 99, 67, 99, 89];
 
 		drawRadarWithData(my_data, component_data, 'team-detail-chart');
-		
-		$('#invite-btn').click(function(){
+
+		$('#invite-btn').click(function() {
 			$('#team-detail-modal').modal('close');
 			$('.modal-overlay').remove();
 		});
-		
-		$('#hide-btn').click(function(){
+
+		$('#hide-btn').click(function() {
 			$('#waiting-modal').modal('close');
 			$('.modal-overlay').remove();
 		});
+
+//		var battle_list = douniu.loadSwigView('swig_battle', {
+//			teams: [{
+//					teamName: 'hudsonjoe134124', // 用户昵称 + 时间戳
+//					status: 'ESTABLISHING', // 'PUBLISHING' 'MATCHING' 'GAMING'
+//					type: 'BATTLE', // 'MATCH'
+//					bet: 100, // 赌注
+//					mapId: 1,
+//					rule: '基地爆炸',
+//					participantsCount: 5
+//				},
+//				{
+//					teamName: 'Conyj12323', // 用户昵称 + 时间戳
+//					status: 'ESTABLISHING', // 'PUBLISHING' 'MATCHING' 'GAMING'
+//					type: 'BATTLE', // 'MATCH'
+//					bet: 100, // 赌注
+//					mapId: 1,
+//					rule: '基地爆炸',
+//					participantsCount: 5
+//				}
+//			]
+//		});
+//		
+//		$('.content').html(battle_list);
+
 	</script>
 	<script src="./js/find_team.js"></script>
 
